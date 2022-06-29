@@ -22,7 +22,7 @@ class FiltredTodoListState extends Equatable {
     List<Todo>? filtredList,
   }) {
     return FiltredTodoListState(
-      filtredTodos: filtredTodos ?? this.filtredTodos,
+      filtredTodos: filtredTodos,
     );
   }
 }
