@@ -1,8 +1,6 @@
 import 'package:bloc/bloc.dart';
 import 'package:equatable/equatable.dart';
-import 'package:todo_app_cubit/cubits/todo_search/todo_search_cubit.dart';
 import 'package:todo_app_cubit/models/todo_model.dart';
-
 part 'todo_list_state.dart';
 
 class TodoListCubit extends Cubit<TodoListState> {
