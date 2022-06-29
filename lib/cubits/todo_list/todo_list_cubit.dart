@@ -29,6 +29,7 @@ class TodoListCubit extends Cubit<TodoListState> {
         todos: newTodos,
       ),
     );
+    print(state);
   }
 
   void toggleTodo(String id) {
