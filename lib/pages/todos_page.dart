@@ -8,11 +8,21 @@ class TodosPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: SingleChildScrollView(
-        child: Column(
-          children: const [
-            TodoHeader(),
-          ],
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('TODO app'),
+          centerTitle: true,
+        ),
+        body: SingleChildScrollView(
+          child: Padding(
+            padding:
+                const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
+            child: Column(
+              children: const [
+                TodoHeader(),
+              ],
+            ),
+          ),
         ),
       ),
     );

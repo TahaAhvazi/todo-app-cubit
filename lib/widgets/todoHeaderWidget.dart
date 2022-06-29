@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:todo_app_cubit/cubits/cubits.dart';
@@ -24,6 +26,7 @@ class TodoHeader extends StatelessWidget {
         // )
         Text(
           '${context.watch<ActiveTodoCountCubit>().state.activeTodoCount} items left',
+          style: const TextStyle(color: Colors.redAccent),
         ),
       ],
     );
