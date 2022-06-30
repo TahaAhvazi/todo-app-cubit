@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app_cubit/widgets/create_todo.dart';
 import 'package:todo_app_cubit/widgets/search_filter_todo.dart';
+import 'package:todo_app_cubit/widgets/showTodos.dart';
 
 import '../widgets/todoHeaderWidget.dart';
 
@@ -32,6 +33,7 @@ class _TodosPageState extends State<TodosPage> {
                   height: 20.0,
                 ),
                 SearchAndFilterTodo(),
+                ShowTodos()
               ],
             ),
           ),
