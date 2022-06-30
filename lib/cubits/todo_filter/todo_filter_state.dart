@@ -2,7 +2,9 @@ part of 'todo_filter_cubit.dart';
 
 class TodoFilterState extends Equatable {
   final Filter filter;
-  const TodoFilterState({required this.filter});
+  const TodoFilterState({
+    required this.filter,
+  });
 
   factory TodoFilterState.inital() {
     return const TodoFilterState(
@@ -19,7 +21,7 @@ class TodoFilterState extends Equatable {
     return "TodoFilterStated (filter: $filter) ";
   }
 
-  TodoFilterState cipyWith({Filter? filter}) {
+  TodoFilterState copyWith({Filter? filter}) {
     return TodoFilterState(
       filter: filter ?? this.filter,
     );

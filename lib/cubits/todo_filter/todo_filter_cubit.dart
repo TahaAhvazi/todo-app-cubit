@@ -8,7 +8,8 @@ part 'todo_filter_state.dart';
 class TodoFilterCubit extends Cubit<TodoFilterState> {
   TodoFilterCubit() : super(TodoFilterState.inital());
 
+  // ignore: non_constant_identifier_names
   void ChangeFilter(Filter newFilter) {
-    emit(state.cipyWith(filter: newFilter));
+    emit(state.copyWith(filter: newFilter));
   }
 }
